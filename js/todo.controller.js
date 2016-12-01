@@ -26,7 +26,7 @@ function TodoController(){
      return this.list.filter(function(item){
        return !item.completed;
      });
-  }
+  };
 
 
 
