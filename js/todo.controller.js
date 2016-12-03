@@ -31,7 +31,7 @@ function TodoController(TodoService){
      .remove(item)
      .then(function(response){
        ctrl.list.splice(index, 1);
-     })
+     });
 
   };
 
@@ -41,7 +41,7 @@ function TodoController(TodoService){
       return;
     }
     TodoService
-      .update(item)
+      .update(item);
   };
 
    ctrl.getRemaining = function () {
